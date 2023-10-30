@@ -90,7 +90,7 @@ public class KonversiSuhuGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         double celcius = Double.parseDouble(tfCelcius.getText());
         double fahrenheit = 1.8 * celcius + 32;
-        lblFahrenheit.setText(Double.toString(fahrenheit)+ "Fahrenheit");
+        lblFahrenheit.setText(Double.toString(fahrenheit)+ " Fahrenheit");
     }//GEN-LAST:event_btnConvertActionPerformed
 
     /**
