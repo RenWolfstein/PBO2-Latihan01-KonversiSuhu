@@ -64,6 +64,11 @@ public class KonversiSuhuGUI extends javax.swing.JFrame {
         lblFahrenheit.setText("Fahrenheit");
 
         jButton1.setText("Reset");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -154,6 +159,13 @@ public class KonversiSuhuGUI extends javax.swing.JFrame {
             evt.consume();
         }
     }//GEN-LAST:event_tfCelciusKeyTyped
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        // TODO add your handling code here:
+        tfCelcius.setText("");
+        lblFahrenheit.setText("Fahrenheit");
+        tfCelcius.requestFocus();
+    }//GEN-LAST:event_jButton1MouseClicked
 
     /**
      * @param args the command line arguments
