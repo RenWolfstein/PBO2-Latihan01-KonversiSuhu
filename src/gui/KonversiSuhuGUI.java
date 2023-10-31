@@ -36,8 +36,8 @@ public class KonversiSuhuGUI extends javax.swing.JFrame {
         tfCelcius = new javax.swing.JTextField();
         lblCelcius = new javax.swing.JLabel();
         lblFahrenheit = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnReset = new javax.swing.JButton();
+        btnExit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -63,22 +63,22 @@ public class KonversiSuhuGUI extends javax.swing.JFrame {
 
         lblFahrenheit.setText("Fahrenheit");
 
-        jButton1.setText("Reset");
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnReset.setText("Reset");
+        btnReset.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton1MouseClicked(evt);
+                btnResetMouseClicked(evt);
             }
         });
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnReset.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnResetActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Exit");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnExit.setText("Exit");
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnExitActionPerformed(evt);
             }
         });
 
@@ -90,9 +90,9 @@ public class KonversiSuhuGUI extends javax.swing.JFrame {
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(btnReset)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2))
+                        .addComponent(btnExit))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(btnConvert, javax.swing.GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE)
@@ -116,8 +116,8 @@ public class KonversiSuhuGUI extends javax.swing.JFrame {
                     .addComponent(lblFahrenheit))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(btnReset)
+                    .addComponent(btnExit))
                 .addGap(26, 26, 26))
         );
 
@@ -135,17 +135,17 @@ public class KonversiSuhuGUI extends javax.swing.JFrame {
         lblFahrenheit.setText(Double.toString(fahrenheit)+ " Fahrenheit");
     }//GEN-LAST:event_btnConvertActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
         // TODO add your handling code here:
         tfCelcius.setText("");
         lblFahrenheit.setText("Fahrenheit");
         tfCelcius.requestFocus();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnResetActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         // TODO add your handling code here:
         System.exit(0);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnExitActionPerformed
 
     private void tfCelciusKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tfCelciusKeyTyped
         // TODO add your handling code here:
@@ -160,12 +160,12 @@ public class KonversiSuhuGUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_tfCelciusKeyTyped
 
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+    private void btnResetMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnResetMouseClicked
         // TODO add your handling code here:
         tfCelcius.setText("");
         lblFahrenheit.setText("Fahrenheit");
         tfCelcius.requestFocus();
-    }//GEN-LAST:event_jButton1MouseClicked
+    }//GEN-LAST:event_btnResetMouseClicked
 
     /**
      * @param args the command line arguments
@@ -204,8 +204,8 @@ public class KonversiSuhuGUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnConvert;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnExit;
+    private javax.swing.JButton btnReset;
     private javax.swing.JLabel lblCelcius;
     private javax.swing.JLabel lblFahrenheit;
     private javax.swing.JTextField tfCelcius;
